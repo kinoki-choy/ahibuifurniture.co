@@ -1,0 +1,38 @@
+{% assign sub_category = page.permalink | split: '/' | slice: 2 | first %}
+<ol class="sub_menu">
+  <li>
+    <a {%if sub_category == 'stools' %}class="active"{% endif %} href="/work/stools/">
+      Stools
+    </a>
+  </li>
+  <li>
+    <a {%if sub_category == 'chairs' %}class="active"{% endif %} href="/work/chairs/">
+      Chairs
+    </a>
+  </li>
+  <li>
+    <a {%if sub_category == 'benches' %}class="active"{% endif %} href="/work/benches/">
+      Benches
+    </a>
+  </li>
+  <li>
+    <a {%if sub_category == 'tables' %}class="active"{% endif %} href="/work/tables/">
+      Tables
+    </a>
+  </li>
+  <li>
+    <a {%if sub_category == 'cabinets' %}class="active"{% endif %} href="/work/cabinets/">
+      Cabinets
+    </a>
+  </li>
+  <li>
+    <a {%if sub_category == 'coffee-tables' %}class="active"{% endif %} href="/work/coffee-tables/">
+      Coffee Tables
+    </a>
+  </li>
+  <li>
+    <a {%if sub_category == 'objects' %}class="active"{% endif %} href="/work/objects/">
+      Objects
+    </a>
+  </li>
+</ol>

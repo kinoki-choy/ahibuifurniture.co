@@ -1,0 +1,119 @@
+@import url('https://unpkg.com/chota');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;600&display=swap');
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+a {
+  color: #333;
+}
+
+a:hover, a.active {
+  border-bottom: 1px solid #cdd5d1;
+}
+
+a.logo {
+  display: inline-block;
+  margin: 0 0 30px;
+}
+
+a.logo:hover {
+  border-bottom: none;
+}
+
+body {
+  background-color: #edede9;
+  font-family: 'Noto Serif TC', serif;
+}
+
+nav.index {
+  text-align: center;
+  margin-top: 12%;
+}
+
+nav {
+  margin: 4% 0 0 12px;
+}
+
+ul, ol {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul.menu li {
+  padding-bottom: 5px;
+}
+
+ul.menu li a {
+  padding: 0 4px 0 4px;
+}
+
+ol.sub_menu {
+  margin: 6px 0 12px 29px;
+  list-style-type: decimal-leading-zero;
+  line-height: 1.8em;
+  white-space: nowrap;
+}
+
+ol.sub_menu a {
+  border-bottom: none;
+}
+
+ol.sub_menu a:hover, ol.sub_menu a.active {
+  border-bottom: 1px solid #cdd5d1;
+}
+
+quote {
+  display: block;
+  font-style: italic;
+  font-size: .9em;
+  color: #999;
+  padding: 40px 0 50px;
+}
+
+.content {
+  margin: 40px 0;
+  font-size: .95em;
+}
+
+.content p {
+  text-align: justify;
+}
+
+.content a {
+  border-bottom: 1px solid #cdd5d1;
+}
+
+.content a.photo {
+  border: none;
+}
+
+.content img {
+  padding-top: 10px;
+}
+
+.content p.dimensions {
+  color: #999;
+  font-size: .9em;
+  font-style: italic;
+}
+
+footer {
+  margin: 30px 0 50px;
+  color: grey;
+  font-size: 13px;
+}
+
+.accolades {
+  font-style: italic;
+  line-height: 1.8em;
+  padding-bottom: 14px;
+}
+
+.content span.credits {
+  text-align: left !important;
+  font-size: .85em;
+  color: grey;
+}

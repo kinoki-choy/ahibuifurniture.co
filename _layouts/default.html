@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          {% assign nav = page.permalink | split: '/' | slice: 1 | first %}
+          <nav>
+            <a class="logo" href="/"><img src="/assets/shibui_resized.svg"/></a>
+            <p class="menu">
+              <a href="/about/" {%if nav == 'about' %}class="active"{% endif %}>About</a> /
+              <a href="/work/" {%if nav == 'work' %}class="active"{% endif %}>Work</a> /
+              <a href="/collections/" {%if nav == 'collections' %}class="active"{% endif %}>Collections</a> /
+              <a href="/workshops/" {%if nav == "workshops" %}class="active"{% endif %}>Workshops</a> /
+              <a href="/contact/" {%if nav == 'contact' %}class="active"{% endif %}>Contact</a>
+            </p>
+          </nav>
+        </div>
+      </div>
+      {{ content }}
+      {% include footer.html %}
+    </div>
+  </body>
+</html>
