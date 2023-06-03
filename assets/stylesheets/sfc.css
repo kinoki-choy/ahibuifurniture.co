@@ -1,6 +1,12 @@
 @import url('https://unpkg.com/chota');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;600&display=swap');
 
+@media screen and (max-width: 420px) {
+  nav {
+    font-size: .85em;
+  }
+}
+
 h1, h2, h3, h4, h5 {
   font-weight: 600;
 }
@@ -27,13 +33,13 @@ body {
   font-family: 'Noto Serif TC', serif;
 }
 
+nav {
+  margin: 4% 0 0 12px;
+}
+
 nav.index {
   text-align: center;
   margin-top: 12%;
-}
-
-nav {
-  margin: 4% 0 0 12px;
 }
 
 ul, ol {
